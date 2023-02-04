@@ -9,3 +9,5 @@ Redis playground with Spring
 http post localhost:8080/person id=a89sd7f98a name=John age=33
 http get localhost:8080/person/a89sd7f98a
 http delete localhost:8080/person/a89sd7f98a
+
+https://www.baeldung.com/spring-data-redis-tutorial
