@@ -10,4 +10,7 @@ http post localhost:8080/person id=a89sd7f98a name=John age=33
 http get localhost:8080/person/a89sd7f98a
 http delete localhost:8080/person/a89sd7f98a
 
-https://www.baeldung.com/spring-data-redis-tutorial
+https://www.javacodemonk.com/custom-ttl-for-spring-data-redis-cache-6b38c550
+https://www.youtube.com/watch?v=GtZ3W7g9Arw
+
+https://www.digitalocean.com/community/tutorials/spring-boot-redis-cache

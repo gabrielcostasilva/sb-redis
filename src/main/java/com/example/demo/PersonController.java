@@ -1,8 +1,8 @@
 package com.example.demo;
 
-import org.springframework.web.bind.annotation.DeleteMapping;
+import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,24 +15,17 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class PersonController {
 
-    private final PersonRepository repository;
+    private final PersonService service;
 
     @PostMapping
     public void save(@RequestBody Person person) {
-        repository.save(person);
+        service.save(person);
 
     }
 
-    @GetMapping("/{id}")
-    public Person find(@PathVariable final String id) {
-        return repository.findById(id).get();
-
-    }
-
-    @DeleteMapping("/{id}")
-    public void delete(@PathVariable final String id) {
-        repository.deleteById(id);
-
+    @GetMapping
+    public List<Person> findAll() {
+        return service.findAll();
     }
 
 }
