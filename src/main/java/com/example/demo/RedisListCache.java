@@ -5,18 +5,18 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
+import lombok.RequiredArgsConstructor;
 
 @Service
+@RequiredArgsConstructor
 public class RedisListCache {
 
-    private RedisTemplate<String, Object> redisTemplate;
+    private final RedisTemplate<String, Object> redisTemplate;
+
+    @Resource(name = "redisTemplate")
     private ListOperations<String, Object> listOperations;
-    
-    public RedisListCache(RedisTemplate<String, Object> redisTemplate) {
-    	this.redisTemplate = redisTemplate;
-    	this.listOperations = redisTemplate.opsForList();
-    }
-    
+        
     @PostConstruct
     public void setup() {
     	listOperations.leftPush("sentence", "Hello World!");
