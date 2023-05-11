@@ -1,10 +1,10 @@
-package com.example.demo;
+package com.example.redissession;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class RedisSessionApplicationTests {
 
 	@Test
 	void contextLoads() {
