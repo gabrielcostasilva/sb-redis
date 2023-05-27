@@ -13,6 +13,7 @@ This original project is extended in other branches, as follows:
 - [crud-repository](https://github.com/gabrielcostasilva/sb-redis/tree/crud-repository) extends the basic CRUD using Spring traditional `Repository` interface.
 - [crud-cache](https://github.com/gabrielcostasilva/sb-redis/tree/crud-cache) uses Redis as a cache between a SQL database and a web application.
 - [session](https://github.com/gabrielcostasilva/sb-redis/tree/session) saves the current session to a Redis store. It also uses [Spring Session project](https://docs.spring.io/spring-session/reference/index.html).
+- [auto-docker-compose](https://github.com/gabrielcostasilva/sb-redis/tree/auto-docker-compose) demonstrates a Spring 3.1 feature that automatically runs a `docker-compose.yml` file, therefore, creating your docker containers.
 
 ## Overview
 This project consists of three classes. [`DemoApplication`](./src/main/java/com/example/demo/DemoApplication.java) has no additional code other than the code automatically created for starting the application.
