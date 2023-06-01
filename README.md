@@ -36,3 +36,9 @@ http delete localhost:8080/person/a89sd7f98a
 ```
 
 > We use [HttPie](https://httpie.io) as our REST client.
+
+## Additional References
+
+- [Dockerizing a Spring Boot Application](https://www.baeldung.com/dockerizing-spring-boot-application) show an overview of Spring Boot and Docker working together.
+- [Spring Boot Docker](https://spring.io/guides/topicals/spring-boot-docker/) introduces Spring Boot Docker
+- [Do you still need testcontainers with Spring Boot 3.1?](https://softwaremill.com/do-you-still-need-testcontainers-with-spring-boot-3-1/) exemplifies the use of docker-compose along with Testcontainers.
